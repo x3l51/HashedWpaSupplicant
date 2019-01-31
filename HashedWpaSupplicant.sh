@@ -21,7 +21,7 @@ read PASSWORD
 
 HASHEDSSIDPASSWORD=$(wpa_passphrase SSID PASSWORD)
 
-echo "${HASHEDSSIDPASSWORD}" | grep -v "#" | sudo dd of=/etc/wpa_supplicant/wpa_supplicant.conf >& /dev/null
+echo "${HASHEDSSIDPASSWORD}" | grep -v "#" >> /etc/wpa_supplicant/wpa_supplicant.conf
 
 echo -e "\n${GREEN}Wpa_supplicant.conf successfully generated\n"
 
