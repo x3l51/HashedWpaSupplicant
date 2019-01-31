@@ -6,7 +6,22 @@ This scipt automatically hashes your password and creates the `wpa_supplicant.co
 it, if it already exists.
 
 
-Usage:
+Download the script:
+```
+$:~/testing/HashedWpaSupplicant$ sudo wget https://raw.githubusercontent.com/x3l51/HashedWpaSupplicant/master/HashedWpaSupplicant.sh
+--2019-01-31 10:01:43--  https://raw.githubusercontent.com/x3l51/HashedWpaSupplicant/master/HashedWpaSupplicant.sh
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.112.133
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.112.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 795 [text/plain]
+Saving to: ‘HashedWpaSupplicant.sh’
+
+HashedWpaSupplicant.sh        100%[==============================================>]     795  --.-KB/s    in 0s
+
+2019-01-31 10:01:43 (107 MB/s) - ‘HashedWpaSupplicant.sh’ saved [795/795]
+```
+
+Execute it:
 ```
 $:~/testing/HashedWpaSupplicant$ sudo bash HashedWpaSupplicant.sh
 
