@@ -8,7 +8,8 @@ it, if it already exists.
 
 Download the script:
 ```
-$:~/testing/HashedWpaSupplicant$ sudo wget https://raw.githubusercontent.com/x3l51/HashedWpaSupplicant/master/HashedWpaSupplicant.sh
+$ sudo wget https://raw.githubusercontent.com/x3l51/HashedWpaSupplicant/master/HashedWpaSupplicant.sh
+
 --2019-01-31 10:01:43--  https://raw.githubusercontent.com/x3l51/HashedWpaSupplicant/master/HashedWpaSupplicant.sh
 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.112.133
 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.112.133|:443... connected.
@@ -23,7 +24,7 @@ HashedWpaSupplicant.sh        100%[=============================================
 
 Execute it:
 ```
-$:~/testing/HashedWpaSupplicant$ sudo bash HashedWpaSupplicant.sh
+$ sudo bash HashedWpaSupplicant.sh
 
 ***Generate new wpa_supplicant.conf with hashed password***
 
@@ -40,9 +41,10 @@ Wpa_supplicant.conf successfully generated
 
 `Wpa_supplicant.conf` looks like this:
 ```
-$:~/testing/HashedWpaSupplicant$ sudo cat wpa_supplicant.conf
+$ sudo cat wpa_supplicant.conf
+
 network={
-        ssid="SSID"
+        ssid="TEST_SSID"
         psk=c2161655c6ba444d8df94cbbf4e9c5c4c61fc37702b9c66ed37aee1545a5a333
 }
 ```
